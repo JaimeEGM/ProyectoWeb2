@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de archivos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Proyecto programación WEB 2</h1>
+<div style="text-align: center;">
+  <h2>Leer en CSV</h2>
+  <p>Selecciona el archivo CSV</p>
+  <input type="file" id="archivo1" />
+  <h4>Contenido del archivo:</h4>
+  <pre id="contenido-archivo"></pre>
+  <hr/>
+
+  <h2>Insertar datos en el CSV</h2>
+  <p>Datos (separados por comas) para agregar al archivo:</p>
+  <input type="text" id="nuevos-datos" placeholder="Agregar Nombre, Correo, Edad, etc" />
+  <button id="agregar-datos">Agregar al CSV</button>
+
+  <h2>Borrar datos del CSV, puede copiar desde la visualización y pegar aquí</h2>
+  <input type="text" id="datos-a-eliminar" placeholder="Eliminar Nombre, Correo, Edad, etc" />
+  <button id="eliminar-datos">Eliminar del CSV</button>
+  <hr/>
+
+  <h2>Visualización de datos agregados y eliminados</h2>
+  <p>Archivo listo para modificar</p>
+  <div id="tablares" tex></div>
+  <textarea id="csv-edit" rows="8" cols="20" placeholder="Contenido del CVS" ></textarea>
+</div>
+</body>
+<script src="app.js" defer></script>
+
+</html>
